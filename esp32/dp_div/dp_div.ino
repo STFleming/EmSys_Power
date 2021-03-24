@@ -5,7 +5,6 @@
 
 // ----------------------- Floating point ---------------------
 volatile float a[SIZE];
-volatile float b[SIZE];
 volatile float c;
 
 void div_stuff() {
@@ -17,7 +16,6 @@ void div_stuff() {
 void randomize(){
   for(int i=0; i<SIZE; i++) {
       a[i] = esp_random();
-      b[i] = esp_random();
   }
 }
 
@@ -45,7 +43,6 @@ void div_stuff_fixed() {
 void randomize_fixed(){
   for(int i=0; i<SIZE; i++) {
       a_fixed[i] = float_to_fixed(esp_random());
-      b_fixed[i] = float_to_fixed(esp_random());
   }
 }
 // -------------------------------------------------------------

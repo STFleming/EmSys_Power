@@ -1,7 +1,7 @@
 // Floating point dot-product
 
 #define SIZE 4000
-#define ITERS 2000
+#define ITERS 1000
 
 // ----------------------- Floating point ---------------------
 volatile float a[SIZE];

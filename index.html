@@ -18,27 +18,304 @@
 			<div class="slides">
                    <section data-transition="none" data-markdown>
                         <textarea data-template>
-                                __Worst-Case Execution Time and Real-Time Operating Systems__                    
-                        </textarea>
-                   </section>
-
-                   <section data-transition="none" data-markdown>
-                        <textarea data-template>
-                                __embedded systems need precise timing guarantees__
+                                __Power Consumption__                    
                         </textarea>
                    </section>
 
                    <section data-transition="none" data-markdown>
                         <textarea data-template>
                                ## outline
-                               1. Sources of execution time variation
-                               2. sli.do questions
-                               3. Demonstration of execution time variation
-                               4. sli.do questions
-                               5. Real-Time Operating Systems
+                               * What consumes power?
+                               * Strategies for optimising for power
+                               * (If we have time) FPGAs
                         </textarea>
                    </section>
 
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_0.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_1.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/tp_small.jpg)
+                           ![](imgs/battery_small.jpg) 
+
+                           How long will it last unoptimised?
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/unoptimised_lifetime.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/tp_small.jpg)
+                           ![](imgs/battery_small.jpg) 
+
+                           How long will it last optimised?
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/optimised_lifetime.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           __What consumes power within a CPU?__ 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_0.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_1.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_2.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_3.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_4.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/power_model_5.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/pdyn_alpha.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/switching_actvity.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/powg_switching.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/pdyn_voltage.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/voltage.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/pdyn_frequency.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/powg_freq.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/freq.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/approaches.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/race2dark.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/turn_off_the_lights.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/clock_gating.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/sleep_modes.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/modem_sleep.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/light_sleep.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/deep_sleep.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/hibernation.svg) 
+                        </textarea>
+                   </section>
+
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/powg_deep_sleep.svg) 
+                        </textarea>
+                   </section>
+
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/dyn_volt_and_freq_scale.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none"> <img src="imgs/freq_scale_0.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_1.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_2.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_3.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_4.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_5.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/freq_scale_6.svg" height="750"> </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                                __going off chip__                    
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/off_chip.svg) 
+                        </textarea>
+                   </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/powg_offchip.svg) 
+                        </textarea>
+                   </section>
+
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                                __types of arithmetic__                    
+                        </textarea>
+                   </section>
+
+
+                   <section data-transition="none"> <img src="imgs/float_fixed.svg" height="750"> </section>
+                   <section data-transition="none"> <img src="imgs/annotated_die.png" height="500"> </section>
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                           ![](imgs/powg_arithmetic.svg) 
+                        </textarea>
+                   </section>
+
+
+                   <section data-transition="none" data-markdown>
+                        <textarea data-template>
+                               ## conclusion
+                               * Static and Dynamic (switching rate, clock freq)
+                               * Going to Sleep
+                               * Frequency Scaling
+                               * Going off chip
+                               * Arithmetic
+                        </textarea>
+                   </section>
+
+                 <section data-background-image="imgs/1.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/2.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/4.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/2.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/4.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/5.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/6.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/extra_0.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/extra_1.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/fpga_spelled.png"  data-background-size="contain"></section>
+                 <section data-autoplay data-backimgsnd-video-loop data-background-video="media/msft_fpga_edited.mp4" data-background-size="contain"></section>
+                 <section data-background-image="imgs/13.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/8.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/9.png"  data-background-size="contain"></section>
+                 <section data-background-image="imgs/10.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/11.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/14.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/15.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/16.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/17.png" data-background-size="contain"></section>
+                 <section data-background-image="media/office_space.gif" data-background-size="contain"></section>
+                 <section data-autoplay data-background-video-loop data-background-video="media/systemVerilog.mp4" data-background-size="contain"></section>
+                 <section data-autoplay data-background-video-loop data-background-video="media/place_and_route.mp4" data-background-size="contain"></section>
+
+                 <section data-autoplay data-background-video-loop data-background-video="media/clock_freq_scope.mp4" data-background-size="contain"></section>
+                 <section data-background-image="imgs/21.png" data-background-size="contain"></section>
+                 <section data-background-image="imgs/22.png" data-background-size="contain"></section>
+
+                 <section data-autoplay data-background-video-loop data-background-video="media/gtkwave_scroll.mp4" data-background-size="contain"></section>
+                 <section data-background-image="" data-background-size="contain"></section>
 			</div>
 		</div>
 
