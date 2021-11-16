@@ -1,8 +1,12 @@
-PORT=/dev/ttyUSB1
+PORT=/dev/ttyUSB0
 EMSYS_COMP=~/EmSys/arduino-cli compile --fqbn esp32:esp32:tinypico
 EMSYS_UPLOAD=~/EmSys/arduino-cli upload --fqbn esp32:esp32:tinypico
 
-.PHONY: dp_float dp_div offchip freq lightSleep deepSleep switching_activity
+.PHONY: dp_float dp_div offchip freq lightSleep deepSleep switching_activity bounce
+
+bounce: bounce/bounce.ino
+		$(EMSYS_COMP) bounce 
+		$(EMSYS_UPLOAD) -p $(PORT) bounce 
 
 dp_float: dp_float/dp_float.ino
 		$(EMSYS_COMP) dp_float 
